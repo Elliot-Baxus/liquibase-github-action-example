@@ -15,7 +15,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           url: ${{ secrets.URL }}
       - uses: liquibase/liquibase-github-action@v1
-          with:
+        with:
           operation: 'tag'
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
