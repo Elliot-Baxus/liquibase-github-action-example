@@ -26,4 +26,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           url: ${{ secrets.URL }}
-          tag: version1
+          tag: 'version1'
