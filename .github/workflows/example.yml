@@ -9,17 +9,15 @@ jobs:
       - uses: liquibase/liquibase-github-action@v2
         with:
           operation: 'update'
-          operation: 'tag'
           classpath: 'example/changelogs'
           changeLogFile: 'samplechangelog.h2.sql'
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           url: ${{ secrets.URL }}
+      - uses: liquibase/liquibase-github-action@v1
+        with:
+          operation: 'tag'
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          url: ${{ secrets.URL }}
           tag: version1
-      # - uses: liquibase/liquibase-github-action@v1
-      #   with:
-      #     operation: 'tag'
-      #     username: ${{ secrets.USERNAME }}
-      #     password: ${{ secrets.PASSWORD }}
-      #     url: ${{ secrets.URL }}
-      #     tag: version1
