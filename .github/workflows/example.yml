@@ -1,3 +1,5 @@
+name: Building from CLI
+
 on: [push]
 
 jobs:
