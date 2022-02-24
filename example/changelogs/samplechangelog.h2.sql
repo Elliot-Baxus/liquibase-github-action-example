@@ -4,7 +4,7 @@
 --rollback DROP TABLE Person;
 create table Person (
     id int primary key,
-    name varchar(50) not null,
+    name varchar(50) not null
 )
 
 
