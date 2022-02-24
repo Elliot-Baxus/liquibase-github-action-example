@@ -1,8 +1,8 @@
 --liquibase formatted sql
 
---changeset your.name:1
---rollback DROP TABLE person;
-create table person (
+--changeset Elliot-BAXUS:1
+--rollback DROP TABLE Person;
+create table Person (
     id int primary key,
     name varchar(50) not null,
     address1 varchar(50),
@@ -10,7 +10,7 @@ create table person (
     city varchar(30)
 )
 
---changeset your.name:2
+--changeset Elliot-BAXUS:2
 --rollback DROP TABLE company;
 create table company (
     id int primary key,
