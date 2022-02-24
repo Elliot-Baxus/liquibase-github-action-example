@@ -28,4 +28,11 @@ create table Person4 (
     name varchar(50) not null
 )
 
+--changeset Elliot-BAXUS:5
+--rollback DROP TABLE Person5;
+create table Person5 (
+    id int primary key,
+    name varchar(50) not null
+)
+
 
