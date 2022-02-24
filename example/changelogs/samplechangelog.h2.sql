@@ -7,6 +7,7 @@ create table Person (
     name varchar(50) not null,
     address1 varchar(50),
     address2 varchar(50),
-    city varchar(30)
+    city varchar(30),
+    us_state varchar(30)
 )
 
